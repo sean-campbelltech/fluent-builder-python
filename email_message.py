@@ -1,3 +1,4 @@
+# Product
 class EmailMessage(object):
     def __init__(self):
         self._from = ""
@@ -33,6 +34,12 @@ class EmailMessage(object):
         return self._attachments
 
     def send(self):
-        print(
-            f"Email successfully sent from {self._from} to {self._to} with subject {self._subject}"
-        )
+        print(f"Email successfully sent:")
+        print(f"------------------------")
+        print(f"From: {self._from}")
+        print(f"To: {self._to}")
+        print(f"CC: {self._cc}")
+        print(f"BCC: {self._bcc}")
+        print(f"Subject: {self._subject}")
+        print(f"Body: {self._body}")
+        print(f"Attachments: {self._attachments}")

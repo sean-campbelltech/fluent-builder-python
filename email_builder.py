@@ -1,6 +1,7 @@
 from email_message import EmailMessage
 
 
+# Builder
 class EmailBuilder:
     def __init__(self):
         self._email = EmailMessage()
