@@ -1,5 +1,5 @@
 # Product
-class EmailMessage(object):
+class EmailMessage:
     def __init__(self):
         self._from = ""
         self._to = []
